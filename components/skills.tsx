@@ -84,29 +84,6 @@ export function Skills() {
         "Represented the department in honoring participants and encouraging student involvement",
       ],
     },
-    {
-      title: "Warehouse Associate (Volunteer)",
-      organization: "The Lost Food Project",
-      location: "Kuala Lumpur, Malaysia",
-      period: "16 May 2024",
-      isCurrent: false,
-      points: [
-        "Sorted, packed, and transported surplus food from markets to those in need",
-        "Improved problem-solving and adaptability in a dynamic volunteering environment",
-      ],
-    },
-    {
-      title: "Humanitarian Aid Volunteer",
-      organization: "Syria Care Malaysia & MSU Cares Club",
-      location: "Shah Alam, Malaysia",
-      period: "24 October 2024",
-      isCurrent: false,
-      points: [
-        "Participated in the Warm Their Winter initiative to support Syrian families",
-        "Sorted, prepared, and packed donated clothes for distribution",
-        "Enhanced organizational and time management skills through coordinated operations",
-      ],
-    },
   ]
 
   return (
