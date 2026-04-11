@@ -5,8 +5,6 @@ import Image from "next/image"
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      {/* Dot grid */}
-      <div className="absolute inset-0 dot-grid opacity-60" />
 
 
       <div className="container px-6 py-28 mx-auto relative z-10">
