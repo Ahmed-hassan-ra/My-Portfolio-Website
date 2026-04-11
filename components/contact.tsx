@@ -1,156 +1,191 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Mail, MapPin, Linkedin, Github } from "lucide-react"
+import { Mail, MapPin, Linkedin, Github, Send, Phone } from "lucide-react"
 import Link from "next/link"
 import { submitContactForm } from "@/app/actions/contact"
 import { useActionState } from "react"
-import { Alert, AlertDescription } from "@/components/ui/alert"
 
 export function Contact() {
   const [state, formAction, isPending] = useActionState(submitContactForm, null)
 
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: "Email",
+      value: "ahmedhassan.ramdn@gmail.com",
+      href: "mailto:ahmedhassan.ramdn@gmail.com",
+      gradient: "from-purple-500 to-pink-500",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+601161516681",
+      href: "tel:+601161516681",
+      gradient: "from-cyan-500 to-blue-500",
+    },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Shah Alam, Selangor, Malaysia",
+      href: null,
+      gradient: "from-indigo-500 to-purple-500",
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "ahmed-hassan-58582a331",
+      href: "https://www.linkedin.com/in/ahmed-hassan-58582a331/",
+      gradient: "from-blue-500 to-cyan-400",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "ahmedhassanra57-design",
+      href: "https://github.com/ahmedhassanra57-design",
+      gradient: "from-zinc-500 to-zinc-400",
+    },
+  ]
+
   return (
-    <section id="contact" className="py-20 bg-muted/20">
-      <div className="container px-4 mx-auto">
-        <div className="max-w-5xl mx-auto space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Get In Touch</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Have a project in mind or want to collaborate? Feel free to reach out!
+    <section id="contact" className="py-24 bg-[#09090b] relative overflow-hidden">
+      <div className="absolute top-1/4 left-0 w-72 h-72 bg-purple-600/8 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-cyan-500/6 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="container px-6 mx-auto relative z-10">
+        <div className="max-w-5xl mx-auto space-y-14">
+
+          {/* Section heading */}
+          <div className="space-y-3">
+            <p className="text-purple-400 text-sm font-semibold uppercase tracking-widest">Contact</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+              Get In Touch
+            </h2>
+            <div className="h-1 w-16 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full" />
+            <p className="text-zinc-400 text-base max-w-xl pt-1">
+              Have a project in mind or want to collaborate? I&apos;d love to hear from you.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Information */}
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Contact Information</CardTitle>
-                  <CardDescription>Feel free to reach out through any of these channels</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Mail className="h-5 w-5 text-muted-foreground mt-0.5" />
+            {/* Contact Info */}
+            <div className="space-y-4">
+              {contactInfo.map((item) => {
+                const Icon = item.icon
+                const content = (
+                  <div className="flex items-center gap-4 p-4 glass rounded-xl transition-all duration-300 group w-full text-left">
+                    <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shrink-0 shadow-lg`}>
+                      <Icon className="h-4 w-4 text-white" />
+                    </div>
                     <div>
-                      <p className="font-medium">Email</p>
-                      <Link
-                        href="mailto:ahmedhassan.ramdn@gmail.com"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        ahmedhassan.ramdn@gmail.com
-                      </Link>
+                      <p className="text-xs text-zinc-600 font-medium uppercase tracking-wider">{item.label}</p>
+                      <p className={`text-sm font-medium mt-0.5 ${item.href ? "text-zinc-300 group-hover:text-white transition-colors" : "text-zinc-400"}`}>
+                        {item.value}
+                      </p>
                     </div>
                   </div>
+                )
 
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-muted-foreground mt-0.5" />
-                    <div>
-                      <p className="font-medium">Location</p>
-                      <p className="text-sm text-muted-foreground">Shah Alam, Selangor, Malaysia</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <Linkedin className="h-5 w-5 text-muted-foreground mt-0.5" />
-                    <div>
-                      <p className="font-medium">LinkedIn</p>
-                      <Link
-                        href="https://www.linkedin.com/in/ahmed-hassan-58582a331/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        ahmed-hassan-58582a331
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <Github className="h-5 w-5 text-muted-foreground mt-0.5" />
-                    <div>
-                      <p className="font-medium">GitHub</p>
-                      <Link
-                        href="https://github.com/ahmedhassanra57-design"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        ahmedhassanra57-design
-                      </Link>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+                return item.href ? (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
+                    {content}
+                  </Link>
+                ) : (
+                  <div key={item.label}>{content}</div>
+                )
+              })}
             </div>
 
             {/* Contact Form */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
-                <CardDescription>Fill out the form below and I'll get back to you soon</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form action={formAction} className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" name="name" placeholder="Your name" required disabled={isPending} />
+            <div className="glass rounded-2xl p-7">
+              <h3 className="text-white font-semibold text-lg mb-6">Send a Message</h3>
+              <form action={formAction} className="space-y-4">
+                <div className="space-y-1.5">
+                  <label htmlFor="name" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                    disabled={isPending}
+                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                  />
+                </div>
+
+                <div className="space-y-1.5">
+                  <label htmlFor="email" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="your.email@example.com"
+                    required
+                    disabled={isPending}
+                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                  />
+                </div>
+
+                <div className="space-y-1.5">
+                  <label htmlFor="subject" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                    Subject
+                  </label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    placeholder="What's this about?"
+                    required
+                    disabled={isPending}
+                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                  />
+                </div>
+
+                <div className="space-y-1.5">
+                  <label htmlFor="message" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your message..."
+                    rows={4}
+                    required
+                    disabled={isPending}
+                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all resize-none disabled:opacity-50"
+                  />
+                </div>
+
+                {state?.success && (
+                  <div className="px-4 py-3 rounded-xl border border-green-500/25 bg-green-500/10 text-green-400 text-sm">
+                    {state.message}
                   </div>
+                )}
 
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="your.email@example.com"
-                      required
-                      disabled={isPending}
-                    />
+                {state?.error && (
+                  <div className="px-4 py-3 rounded-xl border border-red-500/25 bg-red-500/10 text-red-400 text-sm">
+                    {state.message}
                   </div>
+                )}
 
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input id="subject" name="subject" placeholder="What's this about?" required disabled={isPending} />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Your message..."
-                      rows={5}
-                      required
-                      disabled={isPending}
-                    />
-                  </div>
-
-                  {state?.success && (
-                    <Alert>
-                      <AlertDescription className="text-green-600 dark:text-green-400">
-                        {state.message}
-                      </AlertDescription>
-                    </Alert>
-                  )}
-
-                  {state?.error && (
-                    <Alert variant="destructive">
-                      <AlertDescription>{state.message}</AlertDescription>
-                    </Alert>
-                  )}
-
-                  <Button type="submit" className="w-full" disabled={isPending}>
-                    {isPending ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+                <button
+                  type="submit"
+                  disabled={isPending}
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-purple-600 to-cyan-500 hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5"
+                >
+                  <Send className="h-4 w-4" />
+                  {isPending ? "Sending..." : "Send Message"}
+                </button>
+              </form>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

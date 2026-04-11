@@ -1,112 +1,173 @@
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Code2 } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowRight, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
 export function Hero() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-blue-950 dark:via-purple-950 dark:to-pink-950">
-      <div className="absolute inset-0 bg-grid-slate-200/50 dark:bg-grid-slate-800/50 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+  const stats = [
+    { value: "2+", label: "Years Building" },
+    { value: "2", label: "Live Products" },
+    { value: "20+", label: "API Endpoints" },
+  ]
 
-      <div className="container px-4 py-20 mx-auto relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#09090b]">
+      {/* Dot grid */}
+      <div className="absolute inset-0 dot-grid opacity-60" />
+
+      {/* Background glow orbs */}
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-[140px] pointer-events-none" />
+
+      <div className="container px-6 py-28 mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+
             {/* Text Content */}
-            <div className="space-y-8 text-center md:text-left order-2 md:order-1">
-              <div className="space-y-4">
-                <div className="flex justify-center md:justify-start mb-4">
-                  <div className="p-3 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-lg">
-                    <Code2 className="h-8 w-8 text-white" />
-                  </div>
-                </div>
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-balance bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  Ahmed Hassan Ramadan
+            <div className="space-y-8 order-2 lg:order-1">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-xs font-medium">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                Available for new opportunities
+              </div>
+
+              {/* Heading */}
+              <div className="space-y-2">
+                <p className="text-zinc-400 text-lg font-medium tracking-wide">Hello, I&apos;m</p>
+                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-white">
+                  Ahmed Hassan
                 </h1>
-                <p className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                  Full-Stack Developer & AI Enthusiast
+                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-gradient-purple">
+                  Ramadan
+                </h1>
+              </div>
+
+              {/* Role */}
+              <div className="flex items-center gap-3">
+                <div className="h-px w-8 bg-gradient-to-r from-purple-500 to-transparent" />
+                <p className="text-zinc-300 font-semibold text-lg">
+                  Full-Stack Developer &nbsp;·&nbsp; Backend-Focused &nbsp;·&nbsp; Ex-Intern{" "}
+                  <span className="text-purple-400">@ HIJAU TECH</span>
                 </p>
               </div>
 
-              <p className="text-lg text-foreground/80 text-pretty leading-relaxed">
-                Passionate about creating innovative, user-centric applications powered by artificial intelligence.
-                Skilled in building scalable applications with modern UI frameworks.
+              {/* Bio */}
+              <p className="text-zinc-400 text-base leading-relaxed max-w-xl">
+                Full-stack developer with 6 months of hands-on internship experience, specialized in
+                backend engineering — architecting secure APIs, database systems, and authentication flows.
+                Comfortable across the full stack, with a strong focus on backend performance and security.
               </p>
 
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="#projects"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-purple-600 to-cyan-500 hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 hover:-translate-y-0.5"
                 >
-                  <Link href="#contact">Get In Touch</Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 dark:hover:bg-purple-950 bg-transparent"
+                  View My Work
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] hover:border-white/20 transition-all hover:-translate-y-0.5"
                 >
-                  <Link href="#projects">View Projects</Link>
-                </Button>
+                  Get In Touch
+                </Link>
+                <Link
+                  href="https://www.cybasquad.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-yellow-300 border border-yellow-500/30 bg-yellow-500/10 hover:bg-yellow-500/20 transition-all hover:-translate-y-0.5"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  CybaSquad Live
+                </Link>
               </div>
 
-              <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="icon"
-                  className="hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600"
-                >
-                  <Link href="https://github.com/ahmedhassanra57-design" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-5 w-5" />
-                    <span className="sr-only">GitHub</span>
+              {/* Social Links */}
+              <div className="flex items-center gap-4 pt-2">
+                <span className="text-zinc-600 text-xs uppercase tracking-widest font-medium">Find me on</span>
+                <div className="h-px flex-1 bg-zinc-800" />
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="https://github.com/ahmedhassanra57-design"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-xl border border-white/[0.07] bg-white/[0.03] text-zinc-400 hover:text-white hover:border-purple-500/40 hover:bg-purple-500/10 transition-all"
+                    aria-label="GitHub"
+                  >
+                    <Github className="h-4 w-4" />
                   </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="icon"
-                  className="hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600"
-                >
                   <Link
                     href="https://www.linkedin.com/in/ahmed-hassan-58582a331/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="p-2.5 rounded-xl border border-white/[0.07] bg-white/[0.03] text-zinc-400 hover:text-white hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all"
+                    aria-label="LinkedIn"
                   >
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
+                    <Linkedin className="h-4 w-4" />
                   </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="icon"
-                  className="hover:bg-purple-100 dark:hover:bg-purple-900 hover:text-purple-600"
-                >
-                  <Link href="#contact">
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
+                  <Link
+                    href="mailto:ahmedhassan.ramdn@gmail.com"
+                    className="p-2.5 rounded-xl border border-white/[0.07] bg-white/[0.03] text-zinc-400 hover:text-white hover:border-purple-500/40 hover:bg-purple-500/10 transition-all"
+                    aria-label="Email"
+                  >
+                    <Mail className="h-4 w-4" />
                   </Link>
-                </Button>
+                </div>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-4 pt-2">
+                {stats.map((stat, i) => (
+                  <div
+                    key={i}
+                    className="p-4 rounded-xl border border-white/[0.07] bg-white/[0.02] text-center"
+                  >
+                    <p className="text-2xl font-bold text-gradient-purple">{stat.value}</p>
+                    <p className="text-zinc-500 text-xs mt-1 font-medium">{stat.label}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Profile Image */}
-            <div className="flex justify-center order-1 md:order-2">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-30 animate-pulse" />
-                <div className="relative rounded-3xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-10-13%20at%2009.10.15_6954582c-3rvD4O793ydoqcYh0XcWeuOc3ZuAxt.jpg"
-                    alt="Ahmed Hassan Ramadan"
-                    width={400}
-                    height={500}
-                    className="object-cover w-full h-auto"
-                    priority
-                  />
+            {/* Profile Photo */}
+            <div className="flex justify-center items-center order-1 lg:order-2">
+              <div className="relative animate-float">
+                {/* Outer glow ring */}
+                <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-purple-600 via-cyan-500 to-purple-600 opacity-20 blur-2xl" />
+
+                {/* Rotating gradient border */}
+                <div className="relative w-72 h-80 md:w-80 md:h-96">
+                  {/* Spinning gradient ring */}
+                  <div className="absolute -inset-[3px] rounded-3xl bg-gradient-to-br from-purple-500 via-cyan-400 to-purple-600 opacity-80 animate-spin-slow" />
+
+                  {/* Photo container */}
+                  <div className="relative w-full h-full rounded-3xl overflow-hidden border-[3px] border-transparent bg-[#09090b]">
+                    <Image
+                      src="/ahmed-profile.jpg"
+                      alt="Ahmed Hassan Ramadan"
+                      fill
+                      className="object-cover object-top"
+                      priority
+                    />
+                  </div>
+                </div>
+
+                {/* Floating badge — internship */}
+                <div className="absolute -bottom-4 -left-4 px-3 py-2 rounded-xl border border-white/10 bg-black/80 backdrop-blur-xl shadow-xl">
+                  <p className="text-white text-xs font-semibold">6-Month Internship</p>
+                  <p className="text-purple-400 text-xs">@ HIJAU TECH · Backend</p>
+                </div>
+
+                {/* Floating badge — live product */}
+                <div className="absolute -top-4 -right-4 px-3 py-2 rounded-xl border border-yellow-500/30 bg-yellow-500/10 backdrop-blur-xl shadow-xl">
+                  <p className="text-yellow-300 text-xs font-semibold">Live Product</p>
+                  <p className="text-zinc-400 text-xs">CybaSquad.com</p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { Code2, Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -13,83 +13,102 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-gradient-to-b from-background to-muted/20 border-t border-border/40">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Brand Section */}
+    <footer className="border-t border-white/[0.06] bg-[#09090b]">
+      <div className="container mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="p-2 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg">
-                <Code2 className="w-5 h-5 text-white" />
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-purple-500/20">
+                <span className="text-white font-bold text-sm">AH</span>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Ahmed Hassan
-              </span>
+              <span className="text-white font-bold text-lg">Ahmed Hassan</span>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Full-Stack Developer passionate about creating innovative, user-centric applications powered by artificial
-              intelligence.
+            <p className="text-zinc-500 text-sm leading-relaxed max-w-xs">
+              Full-Stack Developer building production SaaS platforms. Currently at HIJAU TECH SDN. BHD.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-foreground">Quick Links</h3>
-            <nav className="flex flex-col gap-2">
-              {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors text-left w-fit"
-                >
-                  {item}
-                </button>
-              ))}
-            </nav>
-          </div>
-
-          {/* Connect Section */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-foreground">Connect</h3>
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               <a
                 href="https://github.com/ahmedhassanra57-design"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-muted hover:bg-accent rounded-lg transition-colors group"
+                className="p-2 rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-500 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all"
                 aria-label="GitHub"
               >
-                <Github className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+                <Github className="w-4 h-4" />
               </a>
               <a
                 href="https://www.linkedin.com/in/ahmed-hassan-58582a331/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-muted hover:bg-accent rounded-lg transition-colors group"
+                className="p-2 rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-500 hover:text-white hover:border-cyan-500/30 hover:bg-cyan-500/10 transition-all"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+                <Linkedin className="w-4 h-4" />
               </a>
               <a
                 href="mailto:ahmedhassan.ramdn@gmail.com"
-                className="p-2 bg-muted hover:bg-accent rounded-lg transition-colors group"
+                className="p-2 rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-500 hover:text-white hover:border-purple-500/30 hover:bg-purple-500/10 transition-all"
                 aria-label="Email"
               >
-                <Mail className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+                <Mail className="w-4 h-4" />
               </a>
             </div>
-            <p className="text-sm text-muted-foreground">Shah Alam, Selangor, Malaysia</p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h3 className="text-xs font-semibold text-zinc-500 uppercase tracking-widest">Navigation</h3>
+            <nav className="flex flex-col gap-2">
+              {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="text-sm text-zinc-500 hover:text-white transition-colors text-left w-fit flex items-center gap-1 group"
+                >
+                  {item}
+                  <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </button>
+              ))}
+            </nav>
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-4">
+            <h3 className="text-xs font-semibold text-zinc-500 uppercase tracking-widest">Contact</h3>
+            <div className="space-y-2">
+              <a
+                href="mailto:ahmedhassan.ramdn@gmail.com"
+                className="block text-sm text-zinc-500 hover:text-purple-400 transition-colors"
+              >
+                ahmedhassan.ramdn@gmail.com
+              </a>
+              <a
+                href="tel:+601161516681"
+                className="block text-sm text-zinc-500 hover:text-white transition-colors"
+              >
+                +601161516681
+              </a>
+              <p className="text-sm text-zinc-600">Shah Alam, Selangor, Malaysia</p>
+            </div>
+            <a
+              href="https://www.cybasquad.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm text-yellow-400 hover:text-yellow-300 transition-colors font-medium"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+              CybaSquad — Live Product
+            </a>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border/40">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground text-center md:text-left">
-              © {currentYear} Ahmed Hassan Ramadan. All rights reserved.
-            </p>
-          </div>
-          <p className="text-xs text-muted-foreground text-center mt-4">Licensed under the MIT License</p>
+        {/* Bottom bar */}
+        <div className="pt-8 border-t border-white/[0.05] flex flex-col sm:flex-row justify-between items-center gap-2">
+          <p className="text-xs text-zinc-600">
+            © {currentYear} Ahmed Hassan Ramadan. All rights reserved.
+          </p>
+          <p className="text-xs text-zinc-700">Licensed under the MIT License</p>
         </div>
       </div>
     </footer>
