@@ -49,7 +49,7 @@ export function Header() {
             onClick={() => scrollToSection("home")}
             className="flex items-center gap-2.5 group"
           >
-            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:bg-blue-700 transition-colors">
+            <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:bg-emerald-700 transition-colors">
               <span className="text-white font-bold text-sm">AH</span>
             </div>
             <span className="text-foreground font-semibold text-sm hidden sm:block">
@@ -66,7 +66,7 @@ export function Header() {
                 className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group rounded-lg hover:bg-muted"
               >
                 {item.label}
-                <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
+                <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-emerald-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
               </button>
             ))}
           </div>
@@ -75,7 +75,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => scrollToSection("contact")}
-              className="hidden md:block px-4 py-2 text-sm font-semibold rounded-xl bg-blue-600 hover:bg-blue-700 text-white transition-colors shadow-lg shadow-blue-500/20"
+              className="hidden md:block px-4 py-2 text-sm font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white transition-colors shadow-lg shadow-emerald-500/20"
             >
               Hire Me
             </button>
@@ -113,7 +113,7 @@ export function Header() {
             ))}
             <button
               onClick={() => scrollToSection("contact")}
-              className="w-full mt-2 px-4 py-2.5 text-sm font-semibold rounded-xl bg-blue-600 hover:bg-blue-700 text-white transition-colors"
+              className="w-full mt-2 px-4 py-2.5 text-sm font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white transition-colors"
             >
               Hire Me
             </button>

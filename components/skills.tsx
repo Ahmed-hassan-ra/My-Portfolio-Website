@@ -83,11 +83,11 @@ export function Skills() {
 
           {/* Section heading */}
           <div className="space-y-3">
-            <p className="text-blue-400 text-sm font-semibold uppercase tracking-widest">Skills & Experience</p>
+            <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest">Skills & Experience</p>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
               What I Bring
             </h2>
-            <div className="h-1 w-16 bg-blue-500 rounded-full" />
+            <div className="h-1 w-16 bg-emerald-500 rounded-full" />
           </div>
 
           {/* Technical Skills */}
@@ -99,7 +99,7 @@ export function Skills() {
                 return (
                   <div key={category.category} className="glass rounded-2xl p-5 transition-all duration-300 group">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20">
+                      <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/20">
                         <Icon className="h-4 w-4 text-foreground" />
                       </div>
                       <h4 className="font-semibold text-foreground text-sm">{category.category}</h4>
@@ -108,7 +108,7 @@ export function Skills() {
                       {category.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="px-2.5 py-1 text-xs rounded-lg border border-border bg-muted/50 text-muted-foreground hover:text-blue-500 hover:border-blue-500/30 hover:bg-blue-500/10 transition-colors cursor-default"
+                          className="px-2.5 py-1 text-xs rounded-lg border border-border bg-muted/50 text-muted-foreground hover:text-emerald-500 hover:border-emerald-500/30 hover:bg-emerald-500/10 transition-colors cursor-default"
                         >
                           {skill}
                         </span>
@@ -125,7 +125,7 @@ export function Skills() {
             {/* Personal Skills */}
             <div className="glass rounded-2xl p-6 transition-all duration-300">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20">
+                <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/20">
                   <Users className="h-4 w-4 text-foreground" />
                 </div>
                 <h3 className="font-semibold text-foreground text-lg">Personal Skills</h3>
@@ -134,7 +134,7 @@ export function Skills() {
                 {personalSkills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 text-xs rounded-full border border-blue-500/20 bg-blue-500/8 text-blue-500 dark:text-blue-400 font-medium"
+                    className="px-3 py-1.5 text-xs rounded-full border border-emerald-500/20 bg-emerald-500/8 text-emerald-500 dark:text-emerald-400 font-medium"
                   >
                     {skill}
                   </span>
@@ -145,7 +145,7 @@ export function Skills() {
             {/* Languages */}
             <div className="glass rounded-2xl p-6 transition-all duration-300">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20">
+                <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/20">
                   <Globe className="h-4 w-4 text-foreground" />
                 </div>
                 <h3 className="font-semibold text-foreground text-lg">Languages</h3>
@@ -154,7 +154,7 @@ export function Skills() {
                 {languages.map((lang) => (
                   <div key={lang.language} className="flex items-center justify-between p-3 rounded-xl border border-border bg-muted/30">
                     <span className="text-foreground font-medium text-sm">{lang.language}</span>
-                    <span className="px-2.5 py-1 text-xs rounded-full border border-blue-500/25 bg-blue-500/10 text-blue-500 dark:text-blue-400 font-medium">
+                    <span className="px-2.5 py-1 text-xs rounded-full border border-emerald-500/25 bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 font-medium">
                       {lang.level}
                     </span>
                   </div>
@@ -175,7 +175,7 @@ export function Skills() {
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                     <div>
                       <h4 className="font-semibold text-foreground text-base">{exp.title}</h4>
-                      <p className="text-blue-500 dark:text-blue-400 text-sm mt-0.5">{exp.organization}</p>
+                      <p className="text-emerald-500 dark:text-emerald-400 text-sm mt-0.5">{exp.organization}</p>
                     </div>
                     <div className="flex flex-col items-end gap-1 shrink-0">
                       <span className="px-3 py-1 text-xs rounded-lg border border-border bg-muted/50 text-muted-foreground flex items-center gap-1.5 whitespace-nowrap">
@@ -191,7 +191,7 @@ export function Skills() {
                   <ul className="space-y-2">
                     {exp.points.map((point, i) => (
                       <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
-                        <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500" />
+                        <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500" />
                         {point}
                       </li>
                     ))}

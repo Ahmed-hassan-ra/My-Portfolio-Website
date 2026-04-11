@@ -19,7 +19,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+              <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
                 <span className="text-foreground font-bold text-sm">AH</span>
               </div>
               <span className="text-foreground font-bold text-lg">Ahmed Hassan</span>
@@ -32,7 +32,7 @@ export function Footer() {
                 href="https://github.com/ahmedhassanra57-design"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg border border-border bg-muted/20 text-muted-foreground hover:text-foreground hover:border-blue-500/30 hover:bg-blue-500/10 transition-all"
+                className="p-2 rounded-lg border border-border bg-muted/20 text-muted-foreground hover:text-foreground hover:border-emerald-500/30 hover:bg-emerald-500/10 transition-all"
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4" />
@@ -48,7 +48,7 @@ export function Footer() {
               </a>
               <a
                 href="mailto:ahmedhassan.ramdn@gmail.com"
-                className="p-2 rounded-lg border border-border bg-muted/20 text-muted-foreground hover:text-foreground hover:border-blue-500/30 hover:bg-blue-500/10 transition-all"
+                className="p-2 rounded-lg border border-border bg-muted/20 text-muted-foreground hover:text-foreground hover:border-emerald-500/30 hover:bg-emerald-500/10 transition-all"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
@@ -79,7 +79,7 @@ export function Footer() {
             <div className="space-y-2">
               <a
                 href="mailto:ahmedhassan.ramdn@gmail.com"
-                className="block text-sm text-muted-foreground hover:text-blue-400 transition-colors"
+                className="block text-sm text-muted-foreground hover:text-emerald-400 transition-colors"
               >
                 ahmedhassan.ramdn@gmail.com
               </a>
