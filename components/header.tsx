@@ -38,7 +38,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-black/60 backdrop-blur-xl border-b border-white/[0.06]"
+          ? "bg-background/80 backdrop-blur-xl border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -49,10 +49,10 @@ export function Header() {
             onClick={() => scrollToSection("home")}
             className="flex items-center gap-2.5 group"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/40 transition-shadow">
+            <div className="w-9 h-9 rounded-xl bg-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/20 group-hover:bg-purple-700 transition-colors">
               <span className="text-white font-bold text-sm">AH</span>
             </div>
-            <span className="text-white font-semibold text-sm hidden sm:block">
+            <span className="text-foreground font-semibold text-sm hidden sm:block">
               Ahmed Hassan
             </span>
           </button>
@@ -63,10 +63,10 @@ export function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="px-4 py-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group rounded-lg hover:bg-white/[0.04]"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group rounded-lg hover:bg-muted"
               >
                 {item.label}
-                <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-purple-500 to-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
+                <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
               </button>
             ))}
           </div>
@@ -75,7 +75,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => scrollToSection("contact")}
-              className="hidden md:block px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-purple-600 to-cyan-500 text-white hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20"
+              className="hidden md:block px-4 py-2 text-sm font-semibold rounded-xl bg-purple-600 hover:bg-purple-700 text-white transition-colors shadow-lg shadow-purple-500/20"
             >
               Hire Me
             </button>
@@ -83,7 +83,7 @@ export function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="text-zinc-400 hover:text-foreground hover:bg-white/[0.06] dark:hover:bg-white/[0.06]"
+              className="text-muted-foreground hover:text-foreground hover:bg-muted"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
@@ -91,7 +91,7 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden text-zinc-400 hover:text-foreground hover:bg-white/[0.06]"
+              className="md:hidden text-muted-foreground hover:text-foreground hover:bg-muted"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -101,19 +101,19 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-2 space-y-1 border-t border-white/[0.06] pt-4">
+          <div className="md:hidden mt-4 pb-2 space-y-1 border-t border-border pt-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-4 py-2.5 text-sm font-medium text-zinc-400 hover:text-white hover:bg-white/[0.04] rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
               >
                 {item.label}
               </button>
             ))}
             <button
               onClick={() => scrollToSection("contact")}
-              className="w-full mt-2 px-4 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-purple-600 to-cyan-500 text-white hover:opacity-90 transition-opacity"
+              className="w-full mt-2 px-4 py-2.5 text-sm font-semibold rounded-xl bg-purple-600 hover:bg-purple-700 text-white transition-colors"
             >
               Hire Me
             </button>

@@ -54,10 +54,10 @@ export function Projects() {
           {/* Section heading */}
           <div className="space-y-3">
             <p className="text-purple-400 text-sm font-semibold uppercase tracking-widest">Projects</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
               What I&apos;ve Built
             </h2>
-            <div className="h-1 w-16 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full" />
+            <div className="h-1 w-16 bg-purple-500 rounded-full" />
           </div>
 
           {/* CybaSquad — Featured */}
@@ -74,18 +74,18 @@ export function Projects() {
               <div className="grid lg:grid-cols-[1fr_auto] gap-6 mb-8">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <h3 className="text-3xl font-bold text-white">{featuredProject.title}</h3>
+                    <h3 className="text-3xl font-bold text-foreground">{featuredProject.title}</h3>
                     <span className="px-3 py-1 text-xs rounded-full border border-yellow-500/40 bg-yellow-500/15 text-yellow-400 font-semibold flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                       Live Product
                     </span>
                   </div>
-                  <p className="text-zinc-400 text-sm">
+                  <p className="text-muted-foreground text-sm">
                     {featuredProject.subtitle} &nbsp;·&nbsp;
                     <span className="text-yellow-500/80">{featuredProject.company}</span>
                     &nbsp;·&nbsp; {featuredProject.period}
                   </p>
-                  <p className="text-zinc-300 leading-relaxed max-w-2xl">
+                  <p className="text-foreground/80 leading-relaxed max-w-2xl">
                     {featuredProject.description}
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export function Projects() {
                         <div className="w-7 h-7 rounded-lg bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center shrink-0 mt-0.5">
                           <Icon className="h-3.5 w-3.5 text-yellow-400" />
                         </div>
-                        <p className="text-sm text-zinc-400 leading-relaxed">{feature.text}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{feature.text}</p>
                       </div>
                     )
                   })}
@@ -145,8 +145,8 @@ export function Projects() {
           {/* Other Projects */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Code2 className="h-4 w-4 text-zinc-500" />
-              <span className="text-zinc-400 text-sm font-semibold uppercase tracking-wider">Other Projects</span>
+              <Code2 className="h-4 w-4 text-muted-foreground" />
+              <span className="text-muted-foreground text-sm font-semibold uppercase tracking-wider">Other Projects</span>
             </div>
             <div className="space-y-5">
               {otherProjects.map((project, index) => (
@@ -156,11 +156,11 @@ export function Projects() {
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                     <div className="space-y-2">
-                      <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                      <p className="text-zinc-400 text-sm leading-relaxed">{project.description}</p>
+                      <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{project.description}</p>
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
-                      <span className="px-3 py-1 text-xs rounded-lg border border-white/[0.07] bg-white/[0.03] text-zinc-500 whitespace-nowrap">
+                      <span className="px-3 py-1 text-xs rounded-lg border border-border bg-muted/30 text-muted-foreground whitespace-nowrap">
                         {project.period}
                       </span>
                       {project.github && (
@@ -187,7 +187,7 @@ export function Projects() {
                             <div className="w-6 h-6 rounded-md bg-purple-500/10 border border-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
                               <Icon className="h-3 w-3 text-purple-400" />
                             </div>
-                            <p className="text-sm text-zinc-500 leading-relaxed">{feature.text}</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed">{feature.text}</p>
                           </div>
                         )
                       })}
@@ -199,7 +199,7 @@ export function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 text-xs rounded-lg border border-white/[0.06] bg-white/[0.02] text-zinc-500 font-medium"
+                        className="px-2 py-1 text-xs rounded-lg border border-border bg-muted/20 text-muted-foreground font-medium"
                       >
                         {tech}
                       </span>
@@ -216,7 +216,7 @@ export function Projects() {
               href="https://github.com/ahmedhassanra57-design"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-white/[0.08] bg-white/[0.03] text-zinc-300 text-sm font-semibold hover:border-purple-500/30 hover:bg-purple-500/8 hover:text-white transition-all"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-border bg-muted/30 text-foreground/80 text-sm font-semibold hover:border-purple-500/30 hover:bg-purple-500/8 hover:text-foreground transition-all"
             >
               <Github className="h-4 w-4" />
               See all projects on GitHub

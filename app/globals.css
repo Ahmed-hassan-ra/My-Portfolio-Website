@@ -172,12 +172,9 @@
   box-shadow: 0 0 50px rgba(34, 211, 238, 0.2);
 }
 
-/* Gradient text helper */
+/* Accent text color */
 .text-gradient-purple {
-  background: linear-gradient(135deg, #a855f7, #22d3ee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #a855f7;
 }
 
 /* Rotating gradient border for photo */

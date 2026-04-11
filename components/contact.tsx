@@ -57,11 +57,11 @@ export function Contact() {
           {/* Section heading */}
           <div className="space-y-3">
             <p className="text-purple-400 text-sm font-semibold uppercase tracking-widest">Contact</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
               Get In Touch
             </h2>
-            <div className="h-1 w-16 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full" />
-            <p className="text-zinc-400 text-base max-w-xl pt-1">
+            <div className="h-1 w-16 bg-purple-500 rounded-full" />
+            <p className="text-muted-foreground text-base max-w-xl pt-1">
               Have a project in mind or want to collaborate? I&apos;d love to hear from you.
             </p>
           </div>
@@ -74,11 +74,11 @@ export function Contact() {
                 const content = (
                   <div className="flex items-center gap-4 p-4 glass rounded-xl transition-all duration-300 group w-full text-left">
                     <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shrink-0 shadow-lg`}>
-                      <Icon className="h-4 w-4 text-white" />
+                      <Icon className="h-4 w-4 text-foreground" />
                     </div>
                     <div>
                       <p className="text-xs text-zinc-600 font-medium uppercase tracking-wider">{item.label}</p>
-                      <p className={`text-sm font-medium mt-0.5 ${item.href ? "text-zinc-300 group-hover:text-white transition-colors" : "text-zinc-400"}`}>
+                      <p className={`text-sm font-medium mt-0.5 ${item.href ? "text-foreground/80 group-hover:text-foreground transition-colors" : "text-muted-foreground"}`}>
                         {item.value}
                       </p>
                     </div>
@@ -102,10 +102,10 @@ export function Contact() {
 
             {/* Contact Form */}
             <div className="glass rounded-2xl p-7">
-              <h3 className="text-white font-semibold text-lg mb-6">Send a Message</h3>
+              <h3 className="text-foreground font-semibold text-lg mb-6">Send a Message</h3>
               <form action={formAction} className="space-y-4">
                 <div className="space-y-1.5">
-                  <label htmlFor="name" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                  <label htmlFor="name" className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
                     Name
                   </label>
                   <input
@@ -114,12 +114,12 @@ export function Contact() {
                     placeholder="Your name"
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
                   />
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="email" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                  <label htmlFor="email" className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
                     Email
                   </label>
                   <input
@@ -129,12 +129,12 @@ export function Contact() {
                     placeholder="your.email@example.com"
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
                   />
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="subject" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                  <label htmlFor="subject" className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
                     Subject
                   </label>
                   <input
@@ -143,12 +143,12 @@ export function Contact() {
                     placeholder="What's this about?"
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
                   />
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="message" className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                  <label htmlFor="message" className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
                     Message
                   </label>
                   <textarea
@@ -158,7 +158,7 @@ export function Contact() {
                     rows={4}
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-white/[0.07] bg-white/[0.03] text-white placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all resize-none disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all resize-none disabled:opacity-50"
                   />
                 </div>
 
@@ -177,7 +177,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isPending}
-                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-purple-600 to-cyan-500 hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5"
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-foreground bg-purple-600 hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5"
                 >
                   <Send className="h-4 w-4" />
                   {isPending ? "Sending..." : "Send Message"}
