@@ -4,12 +4,12 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
 
-      <div className="container px-6 py-28 mx-auto relative z-10">
+      <div className="container px-4 sm:px-6 py-20 sm:py-28 mx-auto relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
             {/* Text Content */}
             <div className="space-y-8 order-2 lg:order-1">
@@ -22,10 +22,10 @@ export function Hero() {
               {/* Heading */}
               <div className="space-y-2">
                 <p className="text-muted-foreground text-lg font-medium tracking-wide">Hello, I&apos;m</p>
-                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-foreground">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-foreground">
                   Ahmed Hassan
                 </h1>
-                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-emerald-500">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-emerald-500">
                   Ramadan
                 </h1>
               </div>
@@ -111,7 +111,7 @@ export function Hero() {
                 {/* Outer glow */}
                 <div className="absolute -inset-4 rounded-full bg-emerald-600/20 blur-2xl" />
 
-                <div className="relative w-72 h-80 md:w-80 md:h-96">
+                <div className="relative w-56 h-64 sm:w-72 sm:h-80 md:w-80 md:h-96">
                   {/* Solid purple border ring */}
                   <div className="absolute -inset-[3px] rounded-3xl bg-emerald-500 opacity-80 animate-spin-slow" />
 
@@ -128,13 +128,13 @@ export function Hero() {
                 </div>
 
                 {/* Floating badge — role */}
-                <div className="absolute -bottom-4 -left-4 px-3 py-2 rounded-xl border border-border bg-background/90 dark:bg-black/80 backdrop-blur-xl shadow-xl">
+                <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 px-3 py-2 rounded-xl border border-border bg-background/90 dark:bg-black/80 backdrop-blur-xl shadow-xl">
                   <p className="text-foreground text-xs font-semibold">Full-Stack Developer</p>
                   <p className="text-emerald-500 text-xs">Backend Focused</p>
                 </div>
 
                 {/* Floating badge — live product */}
-                <div className="absolute -top-4 -right-4 px-3 py-2 rounded-xl border border-yellow-500/30 bg-yellow-500/10 backdrop-blur-xl shadow-xl">
+                <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 px-3 py-2 rounded-xl border border-yellow-500/30 bg-yellow-500/10 backdrop-blur-xl shadow-xl">
                   <p className="text-yellow-600 dark:text-yellow-300 text-xs font-semibold">Live Product</p>
                   <p className="text-muted-foreground text-xs">CybaSquad.com</p>
                 </div>

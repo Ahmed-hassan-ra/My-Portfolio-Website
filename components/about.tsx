@@ -2,17 +2,17 @@ import { GraduationCap, MapPin, Calendar, Code2 } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-background relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-0 left-1/3 w-72 h-72 bg-emerald-600/8 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="container px-6 mx-auto relative z-10">
+      <div className="container px-4 sm:px-6 mx-auto relative z-10">
         <div className="max-w-5xl mx-auto space-y-14">
 
           {/* Section heading */}
           <div className="space-y-3">
             <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest">About</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
               Who I Am
             </h2>
             <div className="h-1 w-16 bg-emerald-500 rounded-full" />
@@ -78,7 +78,7 @@ export function About() {
           </div>
 
           {/* Background story */}
-          <div className="glass rounded-2xl p-8 transition-all duration-300">
+          <div className="glass rounded-2xl p-5 md:p-8 transition-all duration-300">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/20">
                 <Code2 className="h-5 w-5 text-foreground" />

@@ -44,17 +44,17 @@ export function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-24 bg-background relative overflow-hidden">
+    <section id="projects" className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute top-1/3 right-0 w-72 h-72 bg-yellow-500/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-emerald-500/6 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="container px-6 mx-auto relative z-10">
+      <div className="container px-4 sm:px-6 mx-auto relative z-10">
         <div className="max-w-6xl mx-auto space-y-16">
 
           {/* Section heading */}
           <div className="space-y-3">
             <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest">Projects</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
               What I&apos;ve Built
             </h2>
             <div className="h-1 w-16 bg-emerald-500 rounded-full" />
@@ -67,7 +67,7 @@ export function Projects() {
               <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">Featured Project</span>
             </div>
 
-            <div className="relative rounded-2xl border border-yellow-500/30 bg-gradient-to-br from-yellow-500/[0.05] via-transparent to-orange-500/[0.03] p-8 overflow-hidden group hover:border-yellow-500/50 transition-all duration-300 hover:shadow-[0_0_60px_rgba(234,179,8,0.08)]">
+            <div className="relative rounded-2xl border border-yellow-500/30 bg-gradient-to-br from-yellow-500/[0.05] via-transparent to-orange-500/[0.03] p-5 md:p-8 overflow-hidden group hover:border-yellow-500/50 transition-all duration-300 hover:shadow-[0_0_60px_rgba(234,179,8,0.08)]">
               {/* Subtle top gradient line */}
               <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-yellow-500/60 to-transparent" />
 
@@ -152,7 +152,7 @@ export function Projects() {
               {otherProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="glass rounded-2xl p-7 transition-all duration-300 group"
+                  className="glass rounded-2xl p-5 md:p-7 transition-all duration-300 group"
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                     <div className="space-y-2">

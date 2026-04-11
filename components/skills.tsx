@@ -75,16 +75,16 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-24 bg-background relative overflow-hidden">
+    <section id="skills" className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/6 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="container px-6 mx-auto relative z-10">
+      <div className="container px-4 sm:px-6 mx-auto relative z-10">
         <div className="max-w-6xl mx-auto space-y-16">
 
           {/* Section heading */}
           <div className="space-y-3">
             <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest">Skills & Experience</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
               What I Bring
             </h2>
             <div className="h-1 w-16 bg-emerald-500 rounded-full" />

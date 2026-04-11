@@ -47,17 +47,17 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-24 bg-background relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-emerald-600/8 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-cyan-500/6 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="container px-6 mx-auto relative z-10">
+      <div className="container px-4 sm:px-6 mx-auto relative z-10">
         <div className="max-w-5xl mx-auto space-y-14">
 
           {/* Section heading */}
           <div className="space-y-3">
             <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest">Contact</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
               Get In Touch
             </h2>
             <div className="h-1 w-16 bg-emerald-500 rounded-full" />
@@ -101,7 +101,7 @@ export function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="glass rounded-2xl p-7">
+            <div className="glass rounded-2xl p-5 md:p-7">
               <h3 className="text-foreground font-semibold text-lg mb-6">Send a Message</h3>
               <form action={formAction} className="space-y-4">
                 <div className="space-y-1.5">
