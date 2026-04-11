@@ -87,7 +87,7 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-24 bg-[#09090b] relative overflow-hidden">
+    <section id="skills" className="py-24 bg-background relative overflow-hidden">
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/6 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container px-6 mx-auto relative z-10">

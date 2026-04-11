@@ -10,7 +10,7 @@ export function Hero() {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#09090b]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Dot grid */}
       <div className="absolute inset-0 dot-grid opacity-60" />
 
@@ -142,7 +142,7 @@ export function Hero() {
                   <div className="absolute -inset-[3px] rounded-3xl bg-gradient-to-br from-purple-500 via-cyan-400 to-purple-600 opacity-80 animate-spin-slow" />
 
                   {/* Photo container */}
-                  <div className="relative w-full h-full rounded-3xl overflow-hidden border-[3px] border-transparent bg-[#09090b]">
+                  <div className="relative w-full h-full rounded-3xl overflow-hidden border-[3px] border-transparent bg-background">
                     <Image
                       src="/ahmed-profile.jpg"
                       alt="Ahmed Hassan Ramadan"

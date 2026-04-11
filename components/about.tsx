@@ -2,7 +2,7 @@ import { GraduationCap, MapPin, Calendar, Code2 } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-[#09090b] relative overflow-hidden">
+    <section id="about" className="py-24 bg-background relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-0 left-1/3 w-72 h-72 bg-purple-600/8 rounded-full blur-[100px] pointer-events-none" />
 

@@ -13,7 +13,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-white/[0.06] bg-[#09090b]">
+    <footer className="border-t border-white/[0.06] bg-background">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}

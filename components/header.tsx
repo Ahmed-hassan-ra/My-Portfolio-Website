@@ -1,12 +1,14 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Sun, Moon } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useTheme } from "next-themes"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,8 +71,8 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA + Mobile toggle */}
-          <div className="flex items-center gap-3">
+          {/* CTA + Theme toggle + Mobile toggle */}
+          <div className="flex items-center gap-2">
             <button
               onClick={() => scrollToSection("contact")}
               className="hidden md:block px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-purple-600 to-cyan-500 text-white hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20"
@@ -80,7 +82,16 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden text-zinc-400 hover:text-white hover:bg-white/[0.06]"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="text-zinc-400 hover:text-foreground hover:bg-white/[0.06] dark:hover:bg-white/[0.06]"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden text-zinc-400 hover:text-foreground hover:bg-white/[0.06]"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

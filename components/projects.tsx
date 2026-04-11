@@ -44,7 +44,7 @@ export function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-24 bg-[#09090b] relative overflow-hidden">
+    <section id="projects" className="py-24 bg-background relative overflow-hidden">
       <div className="absolute top-1/3 right-0 w-72 h-72 bg-yellow-500/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-purple-500/6 rounded-full blur-[100px] pointer-events-none" />
 
