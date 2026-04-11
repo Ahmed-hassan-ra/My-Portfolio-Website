@@ -108,7 +108,7 @@
 }
 
 /* ────────────────────────────────────────────────────
-   AURORA — vivid iOS-style glow blobs
+   AURORA — vivid glow blobs
    ──────────────────────────────────────────────────── */
 body::before {
   content: '';
@@ -180,7 +180,7 @@ section, footer, header { position: relative; z-index: 1; }
   background-size: 28px 28px;
 }
 
-/* ── iOS Liquid Glass cards ─────────────────────── */
+/* ── Liquid Glass cards ─────────────────────────── */
 .dark .glass {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(48px) saturate(200%);
