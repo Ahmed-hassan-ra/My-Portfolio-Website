@@ -52,7 +52,7 @@ export function Skills() {
       period: "October 2025 – April 2026",
       isCurrent: false,
       points: [
-        "Led development of CybaSquad, a full-stack SaaS platform using Next.js 15 and Supabase, managing B2C mentorship workflows and B2B hiring use cases",
+        "Built CybaSquad end-to-end, a full-stack SaaS platform using Next.js 15 and Supabase, covering B2C mentorship workflows and B2B hiring use cases",
         "Architected a gamified ranking system and automated RBAC using PostgreSQL triggers and JWT-based authentication",
         "Implemented database hardening and cybersecurity protocols (RLS, rate limiting, security headers: HSTS, CSP, X-Frame-Options)",
         "Executed comprehensive QA for the Mekaniku Marketplace, identifying critical bugs ensuring high-performance stability",

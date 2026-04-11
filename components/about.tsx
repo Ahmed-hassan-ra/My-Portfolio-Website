@@ -89,7 +89,7 @@ export function About() {
               <p>
                 I am a Computer Science undergraduate at Management and Science University (MSU), with
                 6 months of professional internship experience at <span className="text-emerald-400 font-medium">HIJAU TECH SDN. BHD.</span> where
-                I led the backend development of <span className="text-yellow-400 font-medium">CybaSquad</span> — a live SaaS platform serving real users.
+                I built <span className="text-yellow-400 font-medium">CybaSquad</span> end-to-end — a live SaaS platform serving real users.
               </p>
               <p>
                 I&apos;m a <span className="text-foreground font-medium">full-stack developer with a backend focus</span> — comfortable building
