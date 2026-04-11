@@ -46,8 +46,7 @@ export function Hero() {
               <div className="flex items-center gap-3">
                 <div className="h-px w-8 bg-gradient-to-r from-purple-500 to-transparent" />
                 <p className="text-zinc-300 font-semibold text-lg">
-                  Full-Stack Developer &nbsp;·&nbsp; Backend-Focused &nbsp;·&nbsp; Ex-Intern{" "}
-                  <span className="text-purple-400">@ HIJAU TECH</span>
+                  Full-Stack Developer &nbsp;·&nbsp; Backend-Focused
                 </p>
               </div>
 
@@ -156,8 +155,8 @@ export function Hero() {
 
                 {/* Floating badge — internship */}
                 <div className="absolute -bottom-4 -left-4 px-3 py-2 rounded-xl border border-white/10 bg-black/80 backdrop-blur-xl shadow-xl">
-                  <p className="text-white text-xs font-semibold">6-Month Internship</p>
-                  <p className="text-purple-400 text-xs">@ HIJAU TECH · Backend</p>
+                  <p className="text-white text-xs font-semibold">Full-Stack Developer</p>
+                  <p className="text-purple-400 text-xs">Backend Focused</p>
                 </div>
 
                 {/* Floating badge — live product */}
