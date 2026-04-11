@@ -8,9 +8,6 @@ export function Hero() {
       {/* Dot grid */}
       <div className="absolute inset-0 dot-grid opacity-60" />
 
-      {/* Background glow orbs */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-emerald-600/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-emerald-500/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container px-6 py-28 mx-auto relative z-10">
         <div className="max-w-7xl mx-auto">
