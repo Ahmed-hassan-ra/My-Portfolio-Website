@@ -46,18 +46,18 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 bg-background relative overflow-hidden">
       <div className="absolute top-1/3 right-0 w-72 h-72 bg-yellow-500/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-purple-500/6 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-blue-500/6 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container px-6 mx-auto relative z-10">
         <div className="max-w-6xl mx-auto space-y-16">
 
           {/* Section heading */}
           <div className="space-y-3">
-            <p className="text-purple-400 text-sm font-semibold uppercase tracking-widest">Projects</p>
+            <p className="text-blue-400 text-sm font-semibold uppercase tracking-widest">Projects</p>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
               What I&apos;ve Built
             </h2>
-            <div className="h-1 w-16 bg-purple-500 rounded-full" />
+            <div className="h-1 w-16 bg-blue-500 rounded-full" />
           </div>
 
           {/* CybaSquad — Featured */}
@@ -168,7 +168,7 @@ export function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-purple-500/25 bg-purple-500/10 text-purple-400 text-xs font-semibold hover:bg-purple-500/20 transition-colors"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-blue-500/25 bg-blue-500/10 text-blue-400 text-xs font-semibold hover:bg-blue-500/20 transition-colors"
                         >
                           <Github className="h-3.5 w-3.5" />
                           Code
@@ -184,8 +184,8 @@ export function Projects() {
                         const Icon = feature.icon
                         return (
                           <div key={idx} className="flex gap-2.5 items-start">
-                            <div className="w-6 h-6 rounded-md bg-purple-500/10 border border-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                              <Icon className="h-3 w-3 text-purple-400" />
+                            <div className="w-6 h-6 rounded-md bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                              <Icon className="h-3 w-3 text-blue-400" />
                             </div>
                             <p className="text-sm text-muted-foreground leading-relaxed">{feature.text}</p>
                           </div>
@@ -216,7 +216,7 @@ export function Projects() {
               href="https://github.com/ahmedhassanra57-design"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-border bg-muted/30 text-foreground/80 text-sm font-semibold hover:border-purple-500/30 hover:bg-purple-500/8 hover:text-foreground transition-all"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-border bg-muted/30 text-foreground/80 text-sm font-semibold hover:border-blue-500/30 hover:bg-blue-500/8 hover:text-foreground transition-all"
             >
               <Github className="h-4 w-4" />
               See all projects on GitHub

@@ -14,7 +14,7 @@ export function Contact() {
       label: "Email",
       value: "ahmedhassan.ramdn@gmail.com",
       href: "mailto:ahmedhassan.ramdn@gmail.com",
-      gradient: "from-purple-500 to-pink-500",
+      gradient: "from-blue-500 to-pink-500",
     },
     {
       icon: Phone,
@@ -28,7 +28,7 @@ export function Contact() {
       label: "Location",
       value: "Shah Alam, Selangor, Malaysia",
       href: null,
-      gradient: "from-indigo-500 to-purple-500",
+      gradient: "from-indigo-500 to-blue-500",
     },
     {
       icon: Linkedin,
@@ -48,7 +48,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute top-1/4 left-0 w-72 h-72 bg-purple-600/8 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-600/8 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-cyan-500/6 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container px-6 mx-auto relative z-10">
@@ -56,11 +56,11 @@ export function Contact() {
 
           {/* Section heading */}
           <div className="space-y-3">
-            <p className="text-purple-400 text-sm font-semibold uppercase tracking-widest">Contact</p>
+            <p className="text-blue-400 text-sm font-semibold uppercase tracking-widest">Contact</p>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
               Get In Touch
             </h2>
-            <div className="h-1 w-16 bg-purple-500 rounded-full" />
+            <div className="h-1 w-16 bg-blue-500 rounded-full" />
             <p className="text-muted-foreground text-base max-w-xl pt-1">
               Have a project in mind or want to collaborate? I&apos;d love to hear from you.
             </p>
@@ -77,7 +77,7 @@ export function Contact() {
                       <Icon className="h-4 w-4 text-foreground" />
                     </div>
                     <div>
-                      <p className="text-xs text-zinc-600 font-medium uppercase tracking-wider">{item.label}</p>
+                      <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">{item.label}</p>
                       <p className={`text-sm font-medium mt-0.5 ${item.href ? "text-foreground/80 group-hover:text-foreground transition-colors" : "text-muted-foreground"}`}>
                         {item.value}
                       </p>
@@ -114,7 +114,7 @@ export function Contact() {
                     placeholder="Your name"
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/[0.03] transition-all disabled:opacity-50"
                   />
                 </div>
 
@@ -129,7 +129,7 @@ export function Contact() {
                     placeholder="your.email@example.com"
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/[0.03] transition-all disabled:opacity-50"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ export function Contact() {
                     placeholder="What's this about?"
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/[0.03] transition-all disabled:opacity-50"
                   />
                 </div>
 
@@ -158,7 +158,7 @@ export function Contact() {
                     rows={4}
                     required
                     disabled={isPending}
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-zinc-600 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-purple-500/[0.03] transition-all resize-none disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-blue-500/50 focus:bg-blue-500/[0.03] transition-all resize-none disabled:opacity-50"
                   />
                 </div>
 
@@ -177,7 +177,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isPending}
-                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-foreground bg-purple-600 hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5"
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-foreground bg-blue-600 hover:opacity-90 transition-all shadow-lg shadow-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5"
                 >
                   <Send className="h-4 w-4" />
                   {isPending ? "Sending..." : "Send Message"}

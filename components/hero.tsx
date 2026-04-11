@@ -9,8 +9,8 @@ export function Hero() {
       <div className="absolute inset-0 dot-grid opacity-60" />
 
       {/* Background glow orbs */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-purple-500/8 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-blue-500/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container px-6 py-28 mx-auto relative z-10">
         <div className="max-w-7xl mx-auto">
@@ -19,7 +19,7 @@ export function Hero() {
             {/* Text Content */}
             <div className="space-y-8 order-2 lg:order-1">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-500 text-xs font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-xs font-medium">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                 Available for new opportunities
               </div>
@@ -30,14 +30,14 @@ export function Hero() {
                 <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-foreground">
                   Ahmed Hassan
                 </h1>
-                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-purple-500">
+                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] text-blue-500">
                   Ramadan
                 </h1>
               </div>
 
               {/* Role */}
               <div className="flex items-center gap-3">
-                <div className="h-px w-8 bg-purple-500" />
+                <div className="h-px w-8 bg-blue-500" />
                 <p className="text-muted-foreground font-semibold text-lg">
                   Full-Stack Developer &nbsp;·&nbsp; Backend-Focused
                 </p>
@@ -54,7 +54,7 @@ export function Hero() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="#projects"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-purple-600 hover:bg-purple-700 transition-all shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:-translate-y-0.5"
                 >
                   View My Work
                   <ArrowRight className="h-4 w-4" />
@@ -85,7 +85,7 @@ export function Hero() {
                     href="https://github.com/ahmedhassanra57-design"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-purple-500 hover:border-purple-500/40 hover:bg-purple-500/10 transition-all"
+                    className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-blue-500 hover:border-blue-500/40 hover:bg-blue-500/10 transition-all"
                     aria-label="GitHub"
                   >
                     <Github className="h-4 w-4" />
@@ -94,14 +94,14 @@ export function Hero() {
                     href="https://www.linkedin.com/in/ahmed-hassan-58582a331/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-purple-500 hover:border-purple-500/40 hover:bg-purple-500/10 transition-all"
+                    className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-blue-500 hover:border-blue-500/40 hover:bg-blue-500/10 transition-all"
                     aria-label="LinkedIn"
                   >
                     <Linkedin className="h-4 w-4" />
                   </Link>
                   <Link
                     href="mailto:ahmedhassan.ramdn@gmail.com"
-                    className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-purple-500 hover:border-purple-500/40 hover:bg-purple-500/10 transition-all"
+                    className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-blue-500 hover:border-blue-500/40 hover:bg-blue-500/10 transition-all"
                     aria-label="Email"
                   >
                     <Mail className="h-4 w-4" />
@@ -114,11 +114,11 @@ export function Hero() {
             <div className="flex justify-center items-center order-1 lg:order-2">
               <div className="relative animate-float">
                 {/* Outer glow */}
-                <div className="absolute -inset-4 rounded-full bg-purple-600/20 blur-2xl" />
+                <div className="absolute -inset-4 rounded-full bg-blue-600/20 blur-2xl" />
 
                 <div className="relative w-72 h-80 md:w-80 md:h-96">
                   {/* Solid purple border ring */}
-                  <div className="absolute -inset-[3px] rounded-3xl bg-purple-500 opacity-80 animate-spin-slow" />
+                  <div className="absolute -inset-[3px] rounded-3xl bg-blue-500 opacity-80 animate-spin-slow" />
 
                   {/* Photo */}
                   <div className="relative w-full h-full rounded-3xl overflow-hidden bg-background">
@@ -135,7 +135,7 @@ export function Hero() {
                 {/* Floating badge — role */}
                 <div className="absolute -bottom-4 -left-4 px-3 py-2 rounded-xl border border-border bg-background/90 dark:bg-black/80 backdrop-blur-xl shadow-xl">
                   <p className="text-foreground text-xs font-semibold">Full-Stack Developer</p>
-                  <p className="text-purple-500 text-xs">Backend Focused</p>
+                  <p className="text-blue-500 text-xs">Backend Focused</p>
                 </div>
 
                 {/* Floating badge — live product */}
