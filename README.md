@@ -60,7 +60,7 @@ This project is licensed under the MIT License.
 ## Contact
 
 - **Email:** ahmedhassan.ramdn@gmail.com
-- **LinkedIn:** [Ahmed Hassan](https://www.linkedin.com/in/ahmed-hassan-58582a331/)
+- **LinkedIn:** [Ahmed Hassan](https://www.linkedin.com/in/ahmed-hassan-ra/)
 - **GitHub:** [@ahmedhassanra57-design](https://github.com/ahmedhassanra57-design)
 - **Location:** Shah Alam, Selangor, Malaysia
 

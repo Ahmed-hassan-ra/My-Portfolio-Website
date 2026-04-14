@@ -38,7 +38,7 @@ export function Footer() {
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="https://www.linkedin.com/in/ahmed-hassan-58582a331/"
+                href="https://www.linkedin.com/in/ahmed-hassan-ra/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg border border-border bg-muted/20 text-muted-foreground hover:text-foreground hover:border-cyan-500/30 hover:bg-cyan-500/10 transition-all"

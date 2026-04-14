@@ -34,7 +34,7 @@ export function Contact() {
       icon: Linkedin,
       label: "LinkedIn",
       value: "ahmed-hassan-58582a331",
-      href: "https://www.linkedin.com/in/ahmed-hassan-58582a331/",
+      href: "https://www.linkedin.com/in/ahmed-hassan-ra/",
       gradient: "from-emerald-500 to-cyan-400",
     },
     {

@@ -86,7 +86,7 @@ export function Hero() {
                     <Github className="h-4 w-4" />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/in/ahmed-hassan-58582a331/"
+                    href="https://www.linkedin.com/in/ahmed-hassan-ra/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-emerald-500 hover:border-emerald-500/40 hover:bg-emerald-500/10 transition-all"
