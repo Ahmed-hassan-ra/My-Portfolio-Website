@@ -40,8 +40,8 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      value: "ahmedhassanra57-design",
-      href: "https://github.com/ahmedhassanra57-design",
+      value: "Ahmed-hassan-ra",
+      href: "https://github.com/Ahmed-hassan-ra",
       gradient: "from-zinc-500 to-zinc-400",
     },
   ]

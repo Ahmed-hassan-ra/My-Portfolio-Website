@@ -29,7 +29,7 @@ export function Footer() {
             </p>
             <div className="flex gap-2">
               <a
-                href="https://github.com/ahmedhassanra57-design"
+                href="https://github.com/Ahmed-hassan-ra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg border border-border bg-muted/20 text-muted-foreground hover:text-foreground hover:border-emerald-500/30 hover:bg-emerald-500/10 transition-all"

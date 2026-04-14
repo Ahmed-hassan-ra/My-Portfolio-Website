@@ -38,7 +38,7 @@ export function Projects() {
         { icon: Database, text: "Scalable backend using Prisma and PostgreSQL" },
       ],
       technologies: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Groq SDK", "Google Vision API", "Tesseract.js", "NextAuth", "Tailwind CSS"],
-      github: "https://github.com/ahmedhassanra57-design/MASARI-AI",
+      github: "https://github.com/Ahmed-hassan-ra/MASARI-AI",
       live: null,
     },
   ]
@@ -213,7 +213,7 @@ export function Projects() {
           {/* GitHub CTA */}
           <div className="text-center pt-4">
             <Link
-              href="https://github.com/ahmedhassanra57-design"
+              href="https://github.com/Ahmed-hassan-ra"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-border bg-muted/30 text-foreground/80 text-sm font-semibold hover:border-emerald-500/30 hover:bg-emerald-500/8 hover:text-foreground transition-all"

@@ -77,7 +77,7 @@ export function Hero() {
                 <div className="h-px flex-1 bg-border" />
                 <div className="flex items-center gap-2">
                   <Link
-                    href="https://github.com/ahmedhassanra57-design"
+                    href="https://github.com/Ahmed-hassan-ra"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2.5 rounded-xl border border-border bg-background text-muted-foreground hover:text-emerald-500 hover:border-emerald-500/40 hover:bg-emerald-500/10 transition-all"
