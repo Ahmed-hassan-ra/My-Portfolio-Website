@@ -1,3 +1,12 @@
+---
+title: Ahmed Hassan Portfolio
+colorFrom: purple
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Ahmed Hassan Ramadan - Portfolio Website
 Website Link: https://38f105c0.ahmed-hassan-portfolio-website.pages.dev/
 
