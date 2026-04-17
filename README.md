@@ -24,7 +24,7 @@ A modern, responsive portfolio website showcasing my work as a Full-Stack Develo
 ## Tech Stack
 
 ### Frontend
-- **Next.js 15** - React framework with App Router
+- **Next.js 16** - React framework with App Router
 - **React 19** - UI library
 - **TypeScript** - Type-safe development
 - **Tailwind CSS** - Utility-first CSS framework
@@ -32,7 +32,7 @@ A modern, responsive portfolio website showcasing my work as a Full-Stack Develo
 
 ### Backend & APIs
 - **Next.js Server Actions** - Server-side form handling
-- **Resend** - Email delivery service for contact form
+- **Nodemailer** - Email delivery via Gmail SMTP
 - **Node.js** - Runtime environment
 
 ### Tools & Libraries
@@ -42,11 +42,6 @@ A modern, responsive portfolio website showcasing my work as a Full-Stack Develo
 - **PostCSS** - CSS processing
 - **Git & GitHub** - Version control
 - **Docker** - Containerization
-
-### Database
-- **PostgreSQL** - Relational database
-- **MySQL** - Alternative database support
-- **Prisma** - ORM for database management
 
 ## Projects Featured
 
